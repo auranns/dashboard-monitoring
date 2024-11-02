@@ -1,0 +1,9 @@
+/* Map.css */
+.custom-tooltip {
+  max-width: 200px; /* Sesuaikan lebar maksimum sesuai kebutuhan */
+  white-space: nowrap; /* Mencegah teks melawan baris */
+  text-overflow: ellipsis; /* Menambahkan elipsis (...) jika teks terlalu panjang */
+  overflow: hidden; /* Menyembunyikan teks yang melampaui lebar maksimum */
+  padding: 10px; /* Menambahkan padding di dalam tooltip */
+  font-size: 14px; /* Mengatur ukuran font jika diperlukan */
+}

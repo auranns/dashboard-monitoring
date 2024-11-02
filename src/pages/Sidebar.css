@@ -1,0 +1,178 @@
+.sidebar {
+  width: 250px;
+  height: 650px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #F7FEFF;
+  z-index: 800; 
+}
+
+.background-sidebar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  border-right: 1px solid #e8e8e8;
+}
+
+.menu {
+  width: 100%;
+  position: absolute;
+  top: 121px;
+  left: 0;
+}
+
+.menu-item {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  box-sizing: border-box;
+  opacity: 0.60;
+  transition: background-color 0.3s, opacity 0.3s; 
+}
+
+.menu-item:hover {
+  background-color: #9dc7ff; /* Warna latar belakang saat hover */
+  opacity: 0.80; /* Mengubah opasitas saat hover */
+  cursor: pointer; 
+ }
+
+.menu-item .menu-text {
+  font-size: 14px;
+  font-family: Plus Jakarta Sans, sans-serif;
+  font-weight: 500;
+  color: #273240;
+  letter-spacing: 0.50px;
+  margin-left: 12px;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.icon i {
+  font-size: 20px;
+  color: #273240;
+}
+
+.menu-titlee {
+  font-size: 14px;
+  font-family: Plus Jakarta Sans, sans-serif;
+  font-weight: 400;
+  color: #082431;
+  letter-spacing: 1px;
+  padding-left: 4px;
+  margin: 4px 16px;
+  margin-top: 20px;
+  opacity: 0.50;
+}
+
+.menu-title {
+  font-size: 14px;
+  font-family: Plus Jakarta Sans, sans-serif;
+  font-weight: 400;
+  color: #082431;
+  letter-spacing: 1px;
+  padding-left: 4px;
+  margin: 0px 16px;
+  opacity: 0.50;
+  margin-top: -18px;
+}
+
+.menu-title:hover {
+  color: #004D40; /* Warna teks saat hover */
+}
+
+.logo {
+  width: 162px;
+  height: 27.92px;
+  position: absolute;
+  top: 20px;
+  left: 34px;
+}
+
+.logo-circle {
+  width: 31.80px;
+  height: 27.92px;
+  background: #479ef6;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.logo-letter {
+  width: 11.92px;
+  height: 12.80px;
+  color: white;
+  font-size: 11px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  line-height: 11px;
+  position: absolute;
+  top: 8.14px;
+  left: 10.60px;
+}
+
+.logo-name {
+  width: 120px;
+  height: 14px;
+  color: #00839C;
+  font-size: 18px;
+  font-family: Plus Jakarta Sans, sans-serif;
+  font-weight: 700;
+  line-height: 11px;
+  letter-spacing: 0.50px;
+  position: absolute;
+  top: 9px;
+  left: 42px;
+}
+/* DARK MODE */
+[data-theme="dark"] {
+  --background-color: #222129;
+  --text-color: #ffffff;
+  --card-background-color: #2b2c40;
+  --active-background-color: #3a3b50; 
+  --active-text-color: #e0e0e0; 
+  --hover-background-color: #586b96;
+  --border-color-dark: #2c2c2e; 
+}
+
+.background-sidebar {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+[data-theme="dark"] .background-sidebar {
+  border-right: 1px solid var(--border-color-dark); /* Border yang lebih gelap di mode gelap */
+}
+.menu-title,
+.menu-titlee,
+.menu-item .menu-text,
+.icon i {
+  color: var(--text-color);
+}
+
+.menu-item.active {
+  background-color: #a7d1ff; /* Warna latar belakang saat item aktif */
+  color: #004D40; /* Warna teks saat item aktif */
+  border-left: 4px solid #007bff; /* Garis di sisi kiri untuk menunjukkan aktif */
+}
+[data-theme="dark"] .menu-item.active {
+  background-color: var(--active-background-color);
+  color: var(--active-text-color);
+  border-left: 4px solid #0099ff;
+}
+[data-theme="dark"] .menu-item:hover {
+  background-color: var(--hover-background-color); 
+  opacity: 0.80; 
+  cursor: pointer; 
+}

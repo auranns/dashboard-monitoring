@@ -1,0 +1,22 @@
+{
+  "build": {
+    "env": {
+      "PNPM_FLAGS": "--no-frozen-lockfile"
+    }
+  },
+  "rewrites": [
+    { "source": "/", "destination": "/login" },
+    { "source": "/register", "destination": "/register" },
+    { "source": "/dashboard", "destination": "/dashboard" },
+    { "source": "/amchart1", "destination": "/amchart1" },
+    { "source": "/amchart2", "destination": "/amchart2" },
+    { "source": "/amchart3", "destination": "/amchart3" },
+    { "source": "/sidebar", "destination": "/sidebar" },
+    { "source": "/navbar", "destination": "/navbar" },
+    { "source": "/edit/:id", "destination": "/edit/:id" },
+    { "source": "/forgotpass", "destination": "/forgotpass" },
+    { "source": "/otp", "destination": "/otp" },
+    { "source": "/adduser", "destination": "/adduser" },
+    { "source": "/(.*/)", "destination": "/" }
+  ]
+}

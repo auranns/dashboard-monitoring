@@ -1,0 +1,12 @@
+{
+  "Jawa Tengah": [
+    { "id": 1, "nama": "Kabupaten Semarang" },
+    { "id": 2, "nama": "Kabupaten Kendal" },
+    { "id": 3, "nama": "Kabupaten Klaten" }
+  ],
+  "Jawa Barat": [
+    { "id": 4, "nama": "Kabupaten Bandung" },
+    { "id": 5, "nama": "Kabupaten Bogor" },
+    { "id": 6, "nama": "Kabupaten Cirebon" }
+  ]
+}

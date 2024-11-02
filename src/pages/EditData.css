@@ -1,0 +1,237 @@
+/* Container untuk edit data */
+.edit-data-container {
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+  background-color: #ffffff;
+}
+/* Form styling */
+.edit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  margin-top: 20px;
+  margin-left: 330px;
+}
+
+.edit h1 {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #333;
+}
+/* Input wrap styling */
+.input-wrappp {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-wrappp label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input field styling */
+.input-wrappp input[type="text"] {
+  width: 150%;
+  padding: 8px; /* Padding input lebih besar */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+.edit button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px; /* Padding tombol lebih besar */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.edit button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Icon styling within input wrapper */
+.input-wrappp i.bx {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Adjusted margin for label */
+.input-wrappp label {
+  position: absolute;
+  top: -1rem; /* Margin atas label lebih besar */
+  left: 0;
+  font-size: 0.8em;
+  color: #666;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+
+/* Label transition on focus */
+.input-wrappp input:focus + label,
+.input-wrappp select:focus + label,
+.input-wrappp textarea:focus + label {
+  top: -0.5rem; /* Jarak atas label saat fokus */
+  font-size: 0.7em;
+  color: #333;
+}
+
+/* Adjustments for specific input wrappers */
+.input-wrapp input[type="date"] + label,
+.input-wrapp select#gender + label,
+.input-wrapp select#bloodType + label,
+.input-wrapp select#uniqueQuestion + label {
+  margin-top: -0.4rem; 
+}
+
+/* Styling for input, select, and textarea elements */
+.input-wrapp input,
+.input-wrapp select,
+.input-wrapp textarea {
+  width: 100%;
+  padding: 0.6rem 0; /* Padding lebih besar */
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.8rem;
+  outline: none;
+  background: transparent;
+  transition: border-bottom-color 0.2s ease;
+}
+
+/* Focus state for input, select, and textarea elements */
+.input-wrappp input:focus,
+.input-wrappp select:focus,
+.input-wrappp textarea:focus {
+  border-bottom-color: #333;
+}
+
+.input-wrapppp-group {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  gap: 30px; 
+  width: 150%;
+}
+
+.input-wrapppp-group .input-wrappp {
+  flex: 1;
+}
+/* Styling untuk input text dan date */
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+/* Styling khusus untuk select (dropdown) */
+select {
+  background-color: #fff;
+}
+
+/* Styling untuk input dengan border khusus */
+.input-wrappp input[type="date"] {
+  border: 2px solid #ccc;
+  width: 150%;
+}
+
+.input-wrappp select {
+  border: 2px solid #ccc;
+}
+
+/* Styling untuk grup tombol */
+.button-group {
+  display: flex;
+  gap: 20px; 
+  flex-direction: row;
+  width: 150%; 
+}
+
+/* Styling untuk tombol submit dan cancel */
+.button-group button {
+  padding: 12px 20px; /* Padding tombol */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center; /* Mengatur teks agar berada di tengah tombol */
+}
+
+
+.button-group button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+.button-group button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.button-group button[type="button"] {
+  background-color: #ccc;
+  color: #333;
+}
+
+.button-group button[type="button"]:hover {
+  background-color: #999;
+}
+.popupp {
+  position: fixed; /* Use fixed positioning to cover the whole viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1000; /* High z-index to ensure it appears on top of other elements */
+}
+
+/* DARK MODE */
+[data-theme="dark"] {
+  --background-color: #18171C;
+  --text-color: #ffffff;
+  --label-color: #d1d1d1;
+  --card-background-color: #2b2c40;
+  --input-background-color: #333;
+  --input-border-color: #555;
+}
+[data-theme="dark"] .edit-data-container {
+  background-color: var(--background-color);
+}
+[data-theme="dark"] .edit h1 {
+  color: var(--text-color);
+}
+[data-theme="dark"] .input-wrappp label  {
+  color: var(--label-color);
+}
+[data-theme="dark"] .input-wrappp input[type="text"],
+[data-theme="dark"] input[type="date"] {
+  background-color: var(--input-background-color);
+  border: 2px solid var(--input-border-color);
+  color: #ffffff;
+}
+
+[data-theme="dark"] select {
+  background-color: #333;
+  border: 2px solid var(--select-border-color);
+  color: #ffffff;
+}
+
+

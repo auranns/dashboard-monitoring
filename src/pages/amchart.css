@@ -1,0 +1,163 @@
+.container {
+  width: 100%;
+}
+
+.chart-container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(117, 116, 116, 0.1);
+  width: 70%;
+  height: 100%;
+  margin: 20px auto;
+}
+
+.chart-title1 {
+  padding: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 15px;
+  margin-right: 180px;
+}
+.chart-containerrr .chart-title2 {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  z-index: 10; 
+}
+.chart-titlee {
+  padding: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+  margin-right: 100px;
+}
+.chart {
+  width: 100%;
+  height: 170px; 
+  margin-top: 30px;
+  background: #ffffff; /* Warna latar belakang chart jika diperlukan */
+}
+.chart-containerr {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 10px;
+  padding-top: 20px;
+  margin-left: 100px;
+  width: 70%;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(117, 116, 116, 0.1);
+}
+
+.chart-containerr .chart-title3 {
+  position: absolute;
+  padding-bottom: 10px;
+  top: 10px; 
+  left: 20px; 
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000000; /* Pastikan teksnya terlihat, mungkin perlu mengubah warna menjadi putih atau sesuai dengan latar belakang */
+}
+.chart-containerrr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  padding-top: 30px;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(117, 116, 116, 0.1);
+  width: 70%;
+  height: 100%;
+}
+.chart-title2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+  margin-right: 120px;
+}
+.chart-containerr4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 0.5px solid #f5f4f4; /* Border sekitar section */
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.04);
+  width: 70%;
+  height: 100%;
+  margin-left: 120px;
+  margin-bottom: 10px;
+}
+
+
+/* DARK MODE */
+[data-theme="dark"] {
+  --background-color: #18171C;
+  --text-color: #ffffff;
+  --card-background-color: #2b2c40;
+  --chart-background-color: #222129; /* Warna latar belakang chart di mode gelap */
+  --chart-border-color: #333333; /* Warna border di mode gelap */
+  --chart-shadow-color: rgba(0, 0, 0, 0.5); /* Warna shadow di mode gelap */
+}
+:root {
+  --text-color: #333; /* Warna default untuk light mode */
+}
+
+[data-theme="dark"] {
+  --text-color: #fff; /* Warna untuk dark mode */
+}
+.dashboard-container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .chart-container1,
+[data-theme="dark"] .chart-containerr,
+[data-theme="dark"] .chart-containerrr,
+[data-theme="dark"] .chart-containerr4 {
+  background-color: var(--chart-background-color); /* Warna latar belakang chart di mode gelap */
+  border: 1px solid var(--chart-border-color); /* Warna border di mode gelap */
+  box-shadow: 0 4px 8px var(--chart-shadow-color); /* Warna shadow di mode gelap */
+}
+
+[data-theme="dark"] .chart-title1,
+[data-theme="dark"] .chart-titlee,
+[data-theme="dark"] .chart-title2,
+[data-theme="dark"] .chart-title3 {
+  color: var(--text-color); /* Warna teks di mode gelap */
+}
+
+:root {
+  --text-color-light: #000000; /* Warna teks untuk light mode */
+  --text-color-dark: #ffffff;  /* Warna teks untuk dark mode */
+}
+
+/* Light mode theme */
+[data-theme="light"] {
+  --text-color: var(--text-color-light);
+}
+
+/* Dark mode theme */
+[data-theme="dark"] {
+  --text-color: var(--text-color-dark);
+}
